@@ -4,7 +4,7 @@ Web service RESTful that returns, from a previous csv file, the producer that re
 
 (1) Run the Web Service Application
 
-1.1 - Add the movie project to your workspace.
+1.1 - Add the movie project to your workspace.\n
 1.2 - Click with the right button on your project and go to: Run As->Run on Server.
 1.3 - Selects the server type, for this example I will be using the TomCat v9.0 Server.
 1.3.1 - Define the server's host name, the default is 'localhost'.
