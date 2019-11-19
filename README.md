@@ -34,7 +34,8 @@ Web service RESTful that returns, from a previous csv file, the producer that re
     ]
 }'<br>
 1.3.9 - Use the http verbes to manage the producers on that list:<br>
-&nbsp&nbsp-GET, movie/producers: List the producer with the minimum interval between two awards winning and the one with the maximum interval.<br>
+<blockquote>
+-GET, movie/producers: List the producer with the minimum interval between two awards winning and the one with the maximum interval.<br>
   -GET, movie/producers/{name}: Returns the producers data.<br>
   -POST, producers: Create the producer sent through service. The producer is formed by:<br>
     "followingWin", Long<br>
@@ -45,6 +46,7 @@ Web service RESTful that returns, from a previous csv file, the producer that re
   -PUT, movie/producers/{name}: Changes the producer listed on {name} with the given by the PUT verbe.<br>
   -DELETE, movie/producers/{name}: Delete the producer listed on {name}.<br>
 <br>
+</blockquote>
 (2) Run integration tests<br>
 2.1 - Configure the JUnit in the framework<br>
 2.2 - Click with the right button on your project and go to: Run As->JUnit Test.<br>
