@@ -32,9 +32,9 @@ Web service RESTful that returns, from a previous csv file, the producer that re
             "producer": "Matthew Vaughn"
         }
     ]
-'}<br>
+}'<br>
 1.3.9 - Use the http verbes to manage the producers on that list:<br>
-  -GET, movie/producers: List the producer with the minimum interval between two awards winning and the one with the maximum interval.<br>
+&nbsp&nbsp-GET, movie/producers: List the producer with the minimum interval between two awards winning and the one with the maximum interval.<br>
   -GET, movie/producers/{name}: Returns the producers data.<br>
   -POST, producers: Create the producer sent through service. The producer is formed by:<br>
     "followingWin", Long<br>
