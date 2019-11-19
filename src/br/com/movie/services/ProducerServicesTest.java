@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+
+import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import br.com.movie.controller.ProducerController;
@@ -89,7 +91,14 @@ class ProducerServicesTest {
 	@Test
 	@Order(50)
 	void testDeleteProducer() {
-		assertTrue(true);
+		producerServices.deleteProducer(_USER_1);
+		try {
+			@SuppressWarnings("unused")
+			List<Producer> toTestDeleteProducer = producerServices.getProducer(_USER_1);
+			assertTrue(false);
+		} catch (WebApplicationException e) {
+			assertTrue(true);
+		} 
 	}
 
 }
